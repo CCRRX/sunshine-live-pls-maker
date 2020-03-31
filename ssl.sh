@@ -1,4 +1,5 @@
 #!/bin/bash
+#last time this shit was working -> 31.03.2020 :P
 
 wget -q http://stream.sunshine-live.de/
 
@@ -12,8 +13,6 @@ echo "NumberOfEntries=$l"
 echo ""
 
 while read p; do
-  #var=${p%-???}
-  #var=${p::${#p}31}
   var=${p::-33}
   var2=${var:31}
   echo "File$n=$p"
